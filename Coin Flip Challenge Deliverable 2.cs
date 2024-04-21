@@ -27,8 +27,12 @@ internal class Program
             name = Console.ReadLine();
             Console.WriteLine("Hello " + name + " ! Would you like to play the Coin Flip Challenge?");
             answer = Console.ReadLine();
+            if (answer.Contains(yes))
+            {
 
-            if (answer.Contains("no")) 
+
+            }
+            else if (answer.Contains("no")) 
             {
                 Console.WriteLine("Coward!");
                 Environment.Exit(0);
@@ -60,7 +64,7 @@ internal class Program
                     Console.WriteLine("Wrong");
                 }
             }
-            Console.WriteLine("Thank you "  + name + ". You got a score of " + score + "!");
+            Console.WriteLine("Thank you  "  + name + ". You got a score of " + score + "!");
             Environment.Exit(0);
         }
 
